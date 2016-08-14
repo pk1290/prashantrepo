@@ -34,6 +34,15 @@ private StringValidation validate;
 		
 		  Assert.assertEquals("Vikram", validate.getVal());
 		  
-		  throw new AssertionError();
+
+  }
+  @Test(priority=2)
+  public void testFunc2() throws AssertionError {
+	  
+	  validate.setVal("Vikram");
+		
+		  Assert.assertTrue(validate.getVal().equals("kamaljeet"));
+		  
+
   }
 }
