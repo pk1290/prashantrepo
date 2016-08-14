@@ -16,14 +16,10 @@ private StringValidation validate;
   public void testFunc() throws AssertionError {
 	  
 	  validate.setVal("Rustom");
-		try {
 			
 			Assert.assertEquals("Vikram", validate.getVal());
 			
-		} catch (AssertionError e) {
-			
-			System.out.println(e.getMessage());
-		}
+		
 		  
 		 
   }
